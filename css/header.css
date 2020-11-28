@@ -1,0 +1,43 @@
+.bg-color{
+    background-color: #e7e4e4;
+}
+.breadcrumb{
+    background-color: #e7e4e4;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    content: '|';
+}
+.text-font{
+    color: #999696;
+    font-size: 14px;
+}
+.guest_card{
+    width:154px;
+    height:34px;
+    margin-top:22px;
+}
+.card_name{
+    width:120px;
+    height:34px;
+    border:1px solid #ddd;
+    font:14px/34px 'Microsoft YaHei UI';
+    color: #f5040c;
+    text-indent:34px;
+    background:url(../img/header/shop_car3.png) 13px 9px no-repeat #f7f7f7;
+}
+.goods_count{
+    width: 34px;
+    height:34px;
+    background-color: #ff0026;
+    font:bold 18px/34px 'Microsoft YaHei UI';
+    text-align:center;
+    color:#fff;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}

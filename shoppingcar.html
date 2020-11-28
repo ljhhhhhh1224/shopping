@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/shoppingcar.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--购物网站的头部分-->
+<!--最上层导航-->
+<div class="container-fluid bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <div class="row">
+                    <div class="col-4 p-0 mr-3">
+                        <a href="" class="text-font">Hi,欢迎来到EJ</a></div>
+                    <div class="col-2 p-0 mr-3">
+                        <a href="" class="text-font">请登录</a>
+                    </div>
+                    <div class="col-3 p-0">
+                        <a href="reg.html" class="text-font">免费注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 offset-4">
+                <div class="row">
+                    <ul class="breadcrumb m-0 p-0">
+                        <li class="breadcrumb-item"><a href="" class="text-font"><img src="img/header/user1.png" alt="" class="mr-1">个人中心</a></li>
+                        <li class="breadcrumb-item"><a href="" class="text-font"><img src="img/header/shop_car1.png" alt="" class="mr-1">购物车</a></li>
+                        <li class="breadcrumb-item"><a href="" class="text-font"><img src="img/header/care1.png" alt="" class="mr-1">收藏夹</a></li>
+                        <li class="breadcrumb-item"><a href="" class="text-font"><img src="img/header/new1.png" alt="" class="mr-1">消息</a></li>
+                        <li class="breadcrumb-item"><a href="" class="text-font"><img src="img/header/help1.png" alt="" class="mr-1">帮助</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--图标logo、搜索框和我的购物车-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-12">
+            <a href="#" class="navbar-brand"><img src="img/header/logo.png" alt=""/></a>
+        </div>
+        <div class="col-lg-2 col-md-12 mt-3 ml-5">
+            <a href="#" class="navbar-brand"><img src="img/shoppingcar/shoppingcar.png" alt=""/></a>
+        </div>
+        <div class="col-lg-5 col-md-12 mt-4">
+            <div class="input-group">
+                <input type="text" class="form-control text-font pt-0 pb-0" placeholder="搜索购物车"/>
+                <img src="img/header/search.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#tab1" class="nav-link active " data-toggle="tab" id="tab"><p class="text-dark font-weight-bold">全部商品</p></a></li>
+            <li class="nav-item"><a href="#tab2" class="nav-link" data-toggle="tab"><p class="text-dark font-weight-bold">降价商品</p></a></li>
+            <li class="nav-item"><a href="#tab3" class="nav-link" data-toggle="tab"><p class="text-dark font-weight-bold">库存紧张</p></a></li>
+        </ul>
+        <div class="row mb-4">
+            <div class="col-2 text-dark"></div>
+            <div class="col-4 text-dark">商品信息</div>
+            <div class="col-2 text-dark">单价</div>
+            <div class="col-2 text-dark">数量</div>
+            <div class="col-2 text-dark">金额</div>
+        </div>
+
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane " >
+                <div class="row mt-5" style="border-style: ridge; background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product1.png" class="img-thumbnail">
+                            <div>
+                                <h6>原装创维液晶电视机遥控器TS-Y108-95 32E200E 32E100E 32E100E</h6>
+                                <p>店铺：黑石太子</p>
+                            </div>
+                        </div>                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+                <div class="row mt-5" style="border-style: ridge;background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product2.png" class="img-thumbnail">
+                            <div>
+                                <h6>三洋帝度滚筒洗衣机门开关DG-F6031W DG-F60311BCG门锁 原装正品</h6>
+                                <p>毅源电器配件中心</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+                <div class="row mt-5" style="border-style: ridge;background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product3.png" class="img-thumbnail">
+                            <div>
+                                <h6>【3080新品上市 现货速递】ALIENWARE外星人Aurora R11英特尔酷睿i7/i9水冷游戏电竞台式机高端电脑主机整机</h6>
+                                <p>alienware外星人旗舰店</p>
+                            </div>
+                        </div>                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+                <div class="row mt-5" style="border-style: ridge;background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product4.png" class="img-thumbnail">
+                            <div>
+                                <h6>现货七彩虹iGame GeForce RTX3080 Ultra/Advanced全新3080显卡</h6>
+                                <p>苏宁易购官方旗舰店</p>
+                            </div>
+                        </div>                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <div class="row mt-5" style="border-style: ridge;background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product2.png" class="img-thumbnail">
+                            <div>
+                                <h6>三洋帝度滚筒洗衣机门开关DG-F6031W DG-F60311BCG门锁 原装正品</h6>
+                                <p>毅源电器配件中心</p>
+                            </div>
+                        </div>                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+            </div>
+
+
+
+            <div id="tab3" class="tab-pane">
+                <div class="row mt-5" style="border-style: ridge; background-color: #fdf9f9">
+                    <div class="col-1"><input type="checkbox" class="mt-5"></div>
+                    <div class="col-5">
+                        <div class="media">
+                            <img src="img/shoppingcar/product1.png" class="img-thumbnail">
+                            <div>
+                                <h6>原装创维液晶电视机遥控器TS-Y108-95 32E200E 32E100E 32E100E</h6>
+                                <p>店铺：黑石太子</p>
+                            </div>
+                        </div>                    </div>
+                    <div class="col-2" style="margin: 0 auto ">$10</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">10$</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="row mt-5" style="background-color: white;border-style: inset">
+        <div class="col-lg-12 col-md-4 row">
+            <div class="col-1">
+                <button class="btn btn-danger">全选</button>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-success">删除</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-dark">移入收藏夹</button>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-">分享</button>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3 mt-1">
+                <p class="text-muted">已选商品0件</p>
+            </div>
+            <div class="col-2">
+                <p class="text-success">合计100￥</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="col-lg-12 col-md-4">
+        <ul class="breadcrumb p-0" style="background-color: white">
+            <li class="breadcrumb-item ml-1 "><a href="" class="text-muted">关于我们</a></li>
+            <li class="breadcrumb-item ml-1 "><a href="" class="text-muted">联系我们</a></li>
+            <li class="breadcrumb-item ml-1 "><a href="" class="text-muted">人才招聘</a></li>
+            <li class="breadcrumb-item ml-1 "><a href="" class="text-muted">商家入驻</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">广告服务</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">掌上商城</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">友情链接</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">销售联盟</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">社区</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">公益</a></li>
+            <li class="breadcrumb-item ml-1" ><a href="" class="text-muted">English Site</a></li>
+        </ul>
+        <div class="text-center"><p>Copyright © 2004-2020  华南师范大学 版权所有</p></div>
+    </div>
+</div>
+
+</body>
+</html>
